@@ -1,0 +1,13 @@
+
+<a [title]="myName">
+    {{myName}}
+</a>
+
+<button (click)="showNames()">Show Name</button>
+
+<div *ngIf="isVisible">
+    <div *ngFor="let name of nameList">
+        <h4>{{name}}</h4>
+    </div>
+    <span>Thanks for whatching</span>
+</div>
